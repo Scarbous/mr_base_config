@@ -10,7 +10,7 @@ EXT:mr_base_config helps you to organize your TypoScript and TSConfig in your Te
 1. Basicly download and install the extension.
 
 2. Creat a ext_configuration.php in your Template-Extension and add the config like:
-```
+```php
 // ext_configuration.php
 return array(
 	Typoscripts => [
@@ -29,7 +29,7 @@ return array(
 ```
 
 3. To load the Configfile
-```
+```php
 // ext_localconf.php
 \Scarbous\MrBaseConfig\Utility\TemplatConfigUtility::loadConfig($_EXTKEY);
 ```
@@ -37,17 +37,15 @@ return array(
 ## Based on
 
 That the system can do the job your Template Extension needs the following FolderStructur:
-```
-// for example
-template_extension
-- Configuration
--- TypoScript
---- setup.txt
---- constants.txt
-- Extensions
--- news
---- Configuration
----- TypoScript
------ setup.txt
------ constants.txt
-```
+
+* template_extension
+  *  Configuration
+    * TypoScript
+      * setup.txt
+      * constants.txt
+  * Extensions
+    * news
+      * Configuration
+        * TypoScript
+          * setup.txt
+          * constants.txt
