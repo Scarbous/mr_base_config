@@ -1,0 +1,15 @@
+{
+    "name": "scarbous/mr_base_config",
+    "description": "Adds the functionality to use a configurationfile for TS-Config and TypoScript in your template-extension.",
+    "autoload": {
+        "psr-4": {
+            "Scarbous\\MrBaseConfig\\": "Classes/"
+        }
+    },
+    "type": "typo3-cms-extension",
+    "keywords": ["TYPO3 CMS", "templating", "bootstrap"],
+    "license": "GPL-2.0+",
+    "support": {
+        "issues": "https://github.com/Scarbous/mr_base_config/issues"
+    }
+}

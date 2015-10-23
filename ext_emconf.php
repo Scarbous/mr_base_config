@@ -9,17 +9,17 @@
         'shy' => '',
         'priority' => '',
         'module' => '',
-        'state' => 'beta',
+        'state' => 'test',
         'internal' => '',
         'uploadfolder' => '0',
         'createDirs' => '',
         'modify_tables' => '',
         'clearCacheOnLoad' => 0,
         'lockType' => '',
-        'version' => '0.0.1',
+        'version' => '0.1',
         'constraints' => array(
             'depends' => array(
-                'cms'			=> '6.2',
+                'cms'			=> '6.2-7.5',
             ),
             'conflicts' => array(
             ),
