@@ -31,7 +31,7 @@
 		 */
 		public function preprocessIncludeStaticTypoScriptSources(array $params, TemplateService $pObj)
 		{
-			if (isset($params['row']['root']) && $params['row']['root'] === 1) {
+			if (isset($params['row']['root']) && $params['row']['root'] == 1) {
 				$staticTemplatesFromBackend = GeneralUtility::trimExplode(',', $params['row']['include_static_file']);
 				if (is_array($staticTemplates = $this->getStaticTemplates())) {
 					$domain = DivUtility::getSysDomain($pObj->absoluteRootLine[0]['uid']);
